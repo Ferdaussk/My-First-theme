@@ -1,0 +1,268 @@
+/*
+Theme Name: Best WP Developer
+Theme URI: https://bestwpdeveloper.com/
+Author: BWD
+Author URI: https://bestwpdeveloper.com/
+Description: Our 2021 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. BWD is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://bestwpdeveloper.com/
+Text Domain: bestwpdevelopertd
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready, block-patterns
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+BWD is based on Underscores https://bestwpdeveloper.com/, (C) 2020-2021 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+
+Nicolas Gallagher and Jonathan Neal https://bestwpdeveloper.com/
+Bundled block pattern images: bestwpdeveloper.jpg
+
+Abstract Background by HD Wallpapers, CC0. https://bestwpdeveloper.com/
+Abstract Waves by HD Wallpapers, CC0. https://bestwpdeveloper.com/
+Abstract Bokeh by HD Wallpapers, CC0. https://bestwpdeveloper.com/
+Colorful Bokeh by HD Wallpapers, CC0. https://bestwpdeveloper.com/
+*/
+
+/* Final css for some change */
+.logo{
+	padding: 0;
+}
+.sub-btn {
+    border-radius: 4px !important;
+}
+.previous-next-btn {
+    padding-bottom: 35px;
+}
+img.paymentoption {
+    height: auto;
+    width: 250px;
+    padding-bottom: 12px;
+}
+.single-process {
+    box-shadow: -10px -10px 15px rgba(255,255,255,.5),
+       10px 10px 15px rgba(70,70,70,.12);
+    padding: 5px;
+    position: relative;
+    height: 200px;
+}
+
+p.next-post {
+    position: relative;
+    bottom: 15px;
+}
+.blog-img {
+    min-height: 210px;
+    overflow: hidden;
+}
+.blog-btn{
+    text-align: center;
+}
+.blog-meta{
+    overflow: hidden;
+}
+.blog-img img {
+    height: auto;
+    width: 100%;
+  }
+  .blog-meta span a {
+      margin: 0 1px;
+  }
+  .blog-date-category .cate a {
+    font-size: 12px;
+    padding: 3px 10px;
+}
+.process-row::after {
+    content: "";
+    position: absolute;
+    background: black;
+    height: 2px;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 54%;
+}
+.single-process {
+    padding: 40px;
+    height: 180px;
+    border-radius: 5px;
+}
+.single-process .four, .five, .six{
+    margin-top: 100px!important;
+}
+.process-row::before {
+    width: 71%;
+    top: 4%;
+}
+.card-header h5 .btn.btn-link.collapsed::after {
+    content: '\f063';
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 12px;
+}
+.card-header h5 .btn.btn-link::after {
+    content: '\f062';
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    font-size: 12px;
+}
+.card-header h5 .btn {
+    height: 55px;
+    padding: 0;
+}
+.card-header {
+    padding: 0 40px 0 10px;
+}
+.header-area {
+    padding: 15px 0;
+    top:0;
+}
+.service-header-area {
+    padding: 15px 0;
+}
+.header-area.sticky.scroll-header {
+    padding: 15px 0;
+}
+.scroll-header {
+    animation: slide-down .7s;
+    -webkit-animation: slide-down .7s;
+}
+#button {
+    width: 35px;
+    height: 35px;
+    bottom: 50px;
+    line-height: 35px;
+}
+.single-process.four {
+    margin-top: 100px;
+}
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    } 
+}
+@media (min-width: 1200px) and (max-width: 1500px){
+
+    .single-process.four {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .hero-content {
+        padding: 0 130px;
+    }
+    .single-process.four {
+        margin-top: 100px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .single-process {
+        padding: 14px;
+    }
+    .single-process.four {
+        margin-top: 100px;
+    }
+    .mean-container .mean-bar {
+        position: absolute;
+        background: transparent;
+        top: -25px;
+        right: 20px;
+    }
+    .mean-container a.meanmenu-reveal span {
+        margin-top: 9px!important;
+    }
+    .mean-container a.meanmenu-reveal {
+        padding: 13px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        right: 27px;
+    }
+}
+
+  @media (max-width:767px){
+      .blog-meta .blog-comment {
+          float: left;
+      }
+      .process-row::after {
+          background: transparent;
+      }
+      .single-process {
+        padding: 25px;
+    }
+    .single-process.four {
+        margin-top: 110px;
+    }
+    .mean-container .mean-bar {
+        position: absolute;
+        background: transparent;
+        top: -25px;
+        right: 20px;
+    }
+    .mean-container a.meanmenu-reveal span {
+        margin-top: 9px!important;
+    }
+    .mean-container a.meanmenu-reveal {
+        padding: 13px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 100%;
+        padding: 1em 5%;
+        font-size: 13px!important;
+    }
+
+  }
+
+
+
+
+
+
+
+
+/* This css just for 404 page */
+  .message{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	letter-spacing:1px;
+	z-index:2;
+}
+.errornumber{
+	font-size:200px;
+}
+.message p{
+	font-weight:500;
+	text-align:center;
+}
+.message .title{
+	font-size:1.5rem;
+	margin-bottom:2rem;
+}
+.message-text{
+	max-width:500px;
+	margin-bottom:4rem;
+}
+.fourerror{
+    font-size: 15rem;
+    color: rgb(255, 73, 73);
+    display: inline;
+}
